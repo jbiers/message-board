@@ -1,4 +1,5 @@
-var express = require('express');
+import express from 'express';
+
 var router = express.Router();
 
 const messages = [
@@ -10,7 +11,7 @@ const messages = [
   {
     text: 'Hello world',
     user: 'Charles',
-    added: new Date()
+    creationDate: new Date()
   }
 ]
 
@@ -19,4 +20,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Messages', messages });
 });
 
-module.exports = router;
+export default router;
