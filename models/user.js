@@ -10,4 +10,4 @@ UserSchema.virtual('url').get(function() {
     return '/user/' + this._id;
 })
 
-export default mongoose.model('User', UserSchema);
+export const User = mongoose.model('User', UserSchema);

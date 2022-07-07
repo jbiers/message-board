@@ -5,8 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/new">New Message</a>
+    </nav>
     <h1><%= title %></h1>
-    <p>Listing all <%= title %></p>
 
     <ul>
       <% messages.forEach(message => { %>
@@ -14,6 +17,8 @@
           <h2><%= message.user %></h2>
           <p><%= message.text %></p>
           <b><%= message.creationDate %></b>
+
+          <hr />
         </li>
       <%}) %>
     </ul>

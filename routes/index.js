@@ -1,23 +1,10 @@
 import express from 'express';
 
-var router = express.Router();
+import { messages } from '../models/messages.js';
 
-const messages = [
-  {
-    text: 'Hi there!',
-    user: 'Amando',
-    creationDate: new Date(),
-  },
-  {
-    text: 'Hello world',
-    user: 'Charles',
-    creationDate: new Date()
-  }
-]
+export const indexRouter = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+indexRouter.get('/', function(req, res, next) {
   res.render('index', { title: 'Messages', messages });
 });
-
-export default router;

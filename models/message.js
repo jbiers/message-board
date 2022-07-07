@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const MessageSchema = new Schema(
     {
     text: {type: String, required: true, minLength: 1},
-    author: {type: Schema.Types.ObjectId, ref: 'User', required: true},
+    user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
     creationDate: {type: Date, default: Date.now, required: true}
     }
 );
@@ -18,4 +18,4 @@ MessageSchema.virtual('url').get(function() {
     return '/message/' + this._id;
 });
 
-export default mongoose.model('Message', MessageSchema);
+export const Message = mongoose.model('Message', MessageSchema);
