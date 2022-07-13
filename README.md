@@ -1,5 +1,7 @@
 # message-board
 
-## refactor in typescript
-
-## use javascript modules
+- style a little bit
+- save to mysql database
+- form validation
+- date formatting
+- deploy
