@@ -3,5 +3,5 @@
 - style a little bit
 - save to mysql database
 - form validation
-- date formatting
+- date formatting -OK
 - deploy

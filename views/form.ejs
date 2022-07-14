@@ -3,6 +3,8 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script defer src="validate.js"></script>
   </head>
   <body>
       <nav>
@@ -12,11 +14,11 @@
     <h1><%= title %></h1>
 
     <form method="POST" action="/new">
-        <label for="user">Username:</label><br>
-        <input type="text" id="user" name="user"><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
 
-        <label for="text">Message:</label><br>
-        <input type="textarea" id="text" name="text"><br>
+        <label for="messageText">Message:</label><br>
+        <input type="textarea" id="messageText" name="messageText"><br>
 
         <button type="submit">Post Message</button>
     </form>

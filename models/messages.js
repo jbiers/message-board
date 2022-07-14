@@ -1,12 +1,12 @@
 export const messages = [
     {
-      text: 'Hi there!',
-      user: 'Amando',
+      messageText: 'Hi there!',
+      username: 'Amando',
       creationDate: new Date(),
     },
     {
-      text: 'Hello world',
-      user: 'Charles',
+      messageText: 'Hello world',
+      username: 'Charles',
       creationDate: new Date()
     }
   ]

@@ -13,8 +13,8 @@ formRouter.get('/', function(req, res, next) {
 /* POST form page. */
 formRouter.post('/', function(req, res, next) {
     messages.push({
-        text: req.body.text,
-        user: req.body.user,
+        messageText: req.body.messageText,
+        username: req.body.username,
         creationDate: new Date(),
     })
 
