@@ -11,3 +11,9 @@ export async function getMessages() {
 
     return data;
 }
+
+export async function createMessage(message) {
+    await query(
+        `INSERT INTO messages (messageText, username, creationDate) VALUES ("${message.messageText}", "${message.username}", "${message.creationDate}");`
+    );
+}
